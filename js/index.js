@@ -40,3 +40,62 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+const header = document.querySelector('header');
+const navItem = document.querySelectorAll('nav a');
+const logoImg = document.getElementById('logo-img');
+const ctaText = document.querySelector('.cta h1');
+const btn = document.querySelector('.cta button');
+const codeImg = document.querySelector('#cta-img');
+const Content = document.querySelectorAll('.text-content p');
+const ContentTitle = document.querySelectorAll('.text-content h4');
+const midImg = document.getElementById('middle-img');
+const contact = document.querySelector('.contact h4');
+const contactInfo = document.querySelectorAll(".contact p");
+const footer = document.querySelector('footer p');
+
+// Header
+
+navItem[0].textContent = siteContent["nav"]["nav-item-1"];
+navItem[1].textContent = siteContent["nav"]["nav-item-2"];
+navItem[2].textContent = siteContent["nav"]["nav-item-3"];
+navItem[3].textContent = siteContent["nav"]["nav-item-4"];
+navItem[4].textContent = siteContent["nav"]["nav-item-5"];
+navItem[5].textContent = siteContent["nav"]["nav-item-6"];
+
+// CTA
+
+codeImg.src = siteContent["cta"]["img-src"];
+
+ctaText.textContent = siteContent["cta"]["h1"];
+
+btn.textContent = siteContent["cta"]["button"];
+
+// Content
+
+Content[0].textContent = siteContent["main-content"]["features-content"];
+Content[1].textContent = siteContent["main-content"]["about-content"];
+Content[2].textContent = siteContent["main-content"]["services-content"];
+Content[3].textContent = siteContent["main-content"]["product-content"];
+Content[4].textContent = siteContent["main-content"]["vision-content"];
+
+ContentTitle[0].textContent = siteContent["main-content"]["features-h4"];
+ContentTitle[1].textContent = siteContent["main-content"]["about-h4"];
+ContentTitle[2].textContent = siteContent["main-content"]["services-h4"];
+ContentTitle[3].textContent = siteContent["main-content"]["product-h4"];
+ContentTitle[4].textContent = siteContent["main-content"]["vision-h4"];
+
+midImg.src = siteContent["main-content"]["middle-img-src"];
+
+// Contact
+
+contact.textContent = siteContent["contact"]["contact-h4"];
+
+contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[1].textContent = siteContent["contact"]["phone"];
+contactInfo[2].textContent = siteContent["contact"]["email"];
+
+// Footer
+
+footer.textContent = siteContent["footer"]["copyright"];
